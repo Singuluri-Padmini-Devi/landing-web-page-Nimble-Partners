@@ -96,16 +96,17 @@ nav ul li a {
 /* Investment Areas Section */
 .investment-areas {
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px 100px 20px;
     background: #fff;
     position: relative;
+    margin-bottom: 80px;
 }
 
 .centerpiece {
     position: relative;
-    width: 500px;
-    height: 500px;
-    margin: 0 auto 90px;
+    width: 650px;
+    height: 650px;
+    margin: 0 auto 90px auto;
 }
 
 .globe-wrapper {
@@ -118,8 +119,8 @@ nav ul li a {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 600px;
-    height: 600px;
+    width: 800px;
+    height: 800px;
     border: 2px dotted #ccc;
     border-radius: 50%;
     transform: translate(-50%, -50%);
@@ -128,8 +129,8 @@ nav ul li a {
 
 .globe-video-wrapper {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 420px;
+    height: 420px;
     margin: auto;
     border-radius: 50%;
     overflow: hidden;
@@ -142,16 +143,25 @@ nav ul li a {
     object-fit: cover;
 }
 
-.globe-overlay {
+.globe-overlay.top {
     position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 520px;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.globe-overlay.bottom {
+    position: absolute;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 105%;
     z-index: 3;
-}
-
-.globe-overlay.bottom {
-    bottom: 0;
+    pointer-events: none;
 }
 
 .center-text {
@@ -162,7 +172,7 @@ nav ul li a {
 
 .center-text h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 30px;
+    font-size: 38px;
     color: #2a3f52;
     margin-bottom: 20px;
 }
@@ -185,30 +195,30 @@ nav ul li a {
 .areas-grid {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    margin-top: -100px;
+    gap: 60px;
+    margin-top: -80px;
     position: relative;
     z-index: 5;
 }
 
-.area {
-    width: 200px;
+.area, .area3 {
+    width: 240px;
+    text-align: center;
 }
 
 .area3 {
-    width: 200px;
     margin-top: 90px;
 }
 
 .area img, .area3 img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 20px;
 }
 
 .areas-grid h3 {
     color: #9ace1d;
-    font-size: 22px;
+    font-size: 26px;
     margin-bottom: 15px;
 }
 
@@ -221,6 +231,7 @@ nav ul li a {
 .carousel-section {
     padding: 60px 0;
     text-align: center;
+    margin-top: 40px;
 }
 
 .title {
@@ -542,6 +553,22 @@ footer {
         width: auto;
         max-width: 600px;
     }
+
+    .centerpiece {
+        width: 500px;
+        height: 500px;
+    }
+    .dotted-circle {
+        width: 600px;
+        height: 600px;
+    }
+    .globe-video-wrapper {
+        width: 320px;
+        height: 320px;
+    }
+    .globe-overlay.top {
+        max-width: 400px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -575,18 +602,38 @@ footer {
     }
 
     .centerpiece {
+        width: 350px;
+        height: 350px;
+    }
+
+    .dotted-circle {
         width: 400px;
         height: 400px;
     }
 
-    .dotted-circle {
-        width: 480px;
-        height: 480px;
+    .globe-video-wrapper {
+        width: 200px;
+        height: 200px;
     }
 
-    .globe-video-wrapper {
-        width: 240px;
-        height: 240px;
+    .globe-overlay.top {
+        max-width: 220px;
+    }
+
+    .areas-grid {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .area, .area3 {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .area3 {
+        margin-top: 0;
     }
 
     .expertise .container {
@@ -621,35 +668,30 @@ footer {
     }
 
     .centerpiece {
-        width: 300px;
-        height: 300px;
+        width: 220px;
+        height: 220px;
     }
 
     .dotted-circle {
-        width: 360px;
-        height: 360px;
+        width: 250px;
+        height: 250px;
     }
 
     .globe-video-wrapper {
-        width: 200px;
-        height: 200px;
+        width: 120px;
+        height: 120px;
     }
 
-    .areas-grid {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        margin-top: 30px;
+    .globe-overlay.top {
+        max-width: 120px;
     }
 
-    .area, .area3 {
-        margin: 0;
-        width: 100%;
-        max-width: 300px;
+    .center-text h2 {
+        font-size: 20px;
     }
 
-    .area3 {
-        margin-top: 0;
+    .areas-grid h3 {
+        font-size: 18px;
     }
 
     .articles-flex {
