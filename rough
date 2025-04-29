@@ -1,0 +1,131 @@
+<section class="investment-areas">
+    <div class="container">
+       <!--- <img src="C:\Users\padmini.d\Desktop\website padmini 22042025\globe top.png">-->
+       <img src="C:\Users\padmini.d\Desktop\website padmini 22042025\Combined Shape globe 3.svg">
+        <img src="C:\Users\padmini.d\Desktop\website padmini 22042025\Combined Shape.svg" style="width: 700px;" alt="Abstract Globe">
+            <h2>Diversified Investing<br>for Superior Results</h2>
+        <div class="areas-grid">
+            <div class="area">
+                <div class="background-container">
+                    <img src="C:\Users\padmini.d\Desktop\website padmini 22042025\Combined Shape (2).svg" alt="Overlay Image">
+                  </div>
+                  
+                <h3>Venture Funds</h3>
+                <p>Access top early-stage companies through curated seed fund portfolio.</p>
+            </div>
+            <div class="area">
+                <div class="background-container">
+                    <img src="C:\Users\padmini.d\Desktop\website padmini 22042025\Path.svg" alt="Overlay Image" style="display: block; margin: 0 auto;">
+                  </div>
+                <h3>Secondaries</h3>
+                <p>Capitalize on pre-IPO high-performing market leaders through secondary transactions.</p>
+            </div>
+            <div class="area">
+                <div class="background-container">
+                    <img src="C:\Users\padmini.d\Desktop\website padmini 22042025\Combined Shape (2).svg" alt="Overlay Image">
+                  </div>
+                <h3>Growth</h3>
+                <p>Invest in fast growing companies with proven traction for expansion.</p>
+            </div>
+        </div>
+        <a href="#" class="button learn-more-button">Learn More</a>
+    </div>
+</section>
+
+
+
+/* Investment Areas Section */
+
+.background-container {
+    background-image: url('C:\Users\padmini.d\Desktop\website padmini 22042025\globe top.png');
+    background-size: cover;
+    background-position: center;
+    width: 200px;   
+    height: 130px;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  
+  .background-container img {
+    position: absolute;
+    top: 20px;   
+    left: 20px;
+    width: 10px;
+  }
+  
+.investment-areas {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.investment-areas h2 {
+    width: 842px;
+    height: 124px;
+    font-family: Playfair Display;
+    font-size: 50px;
+    color: #2a3f52;
+    text-decoration: none solid rgb(42, 63, 82);
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.area {
+    padding: 30px;
+    border: 1px solid #eee; 
+    border-radius: 8px;
+}
+
+.area img {
+    width: 100px;
+    height: 100px;
+    opacity: 0.2;
+    fill: #ffffff;
+    stroke-width: 2;
+    display: block;
+
+}
+
+.area h3 {
+    width: 237px;
+    height: 68px;
+    font-family: Playfair Display;
+    font-size: 36px;
+    color: #9ace1d;
+    text-decoration: none solid rgb(154, 206, 29);
+    line-height: 68px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.area p {
+    width: 261px;
+    height: 91px;
+    font-family: Red Hat Display;
+    font-size: 18px;
+    color: #2a3f52;
+    text-decoration: none solid rgb(42, 63, 82);
+    text-align: center;
+    }
+
+.investment-areas .learn-more-button {
+    height: 50px;
+    border: 1px solid #9ace1d;
+    border-radius: 50px;
+    background-color: #9ace1d;
+    background-size: cover;
+    font-family: Red Hat Display;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 12px 30px;
+}
